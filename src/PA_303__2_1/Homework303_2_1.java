@@ -1,5 +1,7 @@
 package PA_303__2_1;
 
+import java.text.DecimalFormat;
+
 public class Homework303_2_1 {
     public static void main(String[] args) {
 //        Write a program that declares two integer variables, assigns an integer to each, and adds them together. Assign the sum to a variable. Print out the result.
@@ -50,8 +52,29 @@ public class Homework303_2_1 {
         int y = 6;
         int q = y/x;
         System.out.println(q);
-        q = (int) (float) y;
+        q = (int) (double) y;
         System.out.println(q);
+
+//        Write a program that declares a named constant and uses it in a calculation. Print the result.
+
+        final double PI = 3.14159;
+        double radius = 10.0;
+        double areaOfCircle = 2 * PI * Math.pow(radius, 2);
+        System.out.println(areaOfCircle);
+
+//        Write a program where you create three variables that represent products at a cafe. The products could be beverages like coffee, cappuccino, espresso, green tea, etc. Assign prices to each product. Create two more variables called subtotal and totalSale and complete an “order” for three items of the first product, four items of the second product, and two items of the third product. Add them all together to calculate the subtotal. Create a constant called SALES_TAX and add sales tax to the subtotal to obtain the totalSale amount. Be sure to format the results to two decimal places.
+
+        double tea = 2.20;
+        double coffee = 4.40;
+        double pastry = 3.25;
+
+        double subtotal = (tea * 3) + (coffee * 4) + (pastry * 2);
+        final double SALES_TAX = 0.08;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String totalSale = df.format( subtotal + (subtotal + SALES_TAX));
+        System.out.println(totalSale);
+
+
 
 
 
