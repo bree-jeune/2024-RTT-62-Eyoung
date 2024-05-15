@@ -62,7 +62,7 @@ public class Homework303_2_1 {
         double areaOfCircle = 2 * PI * Math.pow(radius, 2);
         System.out.println(areaOfCircle);
 
-//        Write a program where you create three variables that represent products at a cafe. The products could be beverages like coffee, cappuccino, espresso, green tea, etc. Assign prices to each product. Create two more variables called subtotal and totalSale and complete an “order” for three items of the first product, four items of the second product, and two items of the third product. Add them all together to calculate the subtotal. Create a constant called SALES_TAX and add sales tax to the subtotal to obtain the totalSale amount. Be sure to format the results to two decimal places.
+//   Write a program where you create three variables that represent products at a cafe. The products could be beverages like coffee, cappuccino, espresso, green tea, etc. Assign prices to each product. Create two more variables called subtotal and totalSale and complete an “order” for three items of the first product, four items of the second product, and two items of the third product. Add them all together to calculate the subtotal. Create a constant called SALES_TAX and add sales tax to the subtotal to obtain the totalSale amount. Be sure to format the results to two decimal places.
 
         double tea = 2.20;
         double coffee = 4.40;
@@ -73,6 +73,8 @@ public class Homework303_2_1 {
         DecimalFormat df = new DecimalFormat("#.##");
         String totalSale = df.format( subtotal + (subtotal + SALES_TAX));
         System.out.println(totalSale);
+
+
 
 
 
